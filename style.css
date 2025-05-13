@@ -1,0 +1,962 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+header {
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffc107;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('gaming-bg.jpg') center/cover;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin-left: 10%;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.cta-button {
+    background-color: #ffc107;
+    color: black;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.know-more {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+.know-more a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.5rem;
+    position: relative;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.know-more a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ffc107;
+}
+
+.know-more a:hover {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+header {
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffc107;
+}
+
+.about-section {
+    min-height: 100vh;
+    padding: 80px 5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url('bg-about.jpg') center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.content-container {
+    display: flex;
+    width: 100%;
+    gap: 5rem;
+    padding: 0 2%;
+    margin-top: 2rem;
+}
+
+.left-section {
+    flex: 1;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.role-title {
+    font-family: 'Impact', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.game-logo {
+    width: 150px;
+}
+
+.game-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.right-section {
+    flex: 2;
+    padding-left: 2rem;
+}
+
+.description {
+    max-width: 700px;
+}
+
+.description p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.greeting {
+    font-size: 1.3rem !important;
+    font-weight: bold;
+}
+
+.quote {
+    font-style: italic;
+    color: #ffc107;
+    font-size: 1.2rem !important;
+}
+
+.portfolio-link {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.portfolio-link a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Impact', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.portfolio-link a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ffc107;
+}
+
+.portfolio-link a:hover {
+    text-decoration: none;
+}
+
+/* Styles untuk halaman home */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('gaming-bg.jpg') center/cover;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin-left: 10%;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.cta-button {
+    background-color: #ffc107;
+    color: black;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.know-more {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+.know-more a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: relative;
+    font-family: 'Impact', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.know-more a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ffc107;
+}
+
+.know-more a:hover {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+header {
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffc107;
+}
+
+.portfolio {
+    padding-top: 80px;
+    background: #1a1a1a;
+}
+
+.title-box {
+    display: inline-block;
+    border: 2px solid #ffc107;
+    padding: 0.5rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.title-box h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+}
+
+section {
+    padding: 4rem 5%;
+    position: relative;
+}
+
+.highlights .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.gameplay-video {
+    position: relative;
+}
+
+.play-button::after {
+    content: '▶';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+}
+
+.description {
+    margin-top: 2rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.rank-stats .stats-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.stats-images {
+    display: flex;
+    gap: 2rem;
+}
+
+.hero-list {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.hero-card {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-card img {
+    width: 100%;
+    max-width: 200px;
+    margin: 1rem 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blogger-link {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.blogger-link a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.blogger-link a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ffc107;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+header {
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffc107;
+}
+
+.blog-content {
+    padding-top: 80px;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url('blog-bg.jpg') center/cover;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero-section h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.blog-posts {
+    padding: 2rem 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.blog-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+}
+
+.card-content {
+    max-width: 800px;
+}
+
+.blog-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.blog-card p {
+    color: #cccccc;
+    margin-bottom: 1.5rem;
+}
+
+.read-more {
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.ml-logo {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.ml-logo img {
+    width: 200px;
+    height: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: white;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url('contact-bg.jpg') center/cover no-repeat fixed;
+}
+
+header {
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffc107;
+}
+
+.contact-section {
+    padding: 120px 10% 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.social-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.value {
+    font-size: 1.2rem;
+}
+
+.quote {
+    max-width: 800px;
+    margin-top: auto;
+    text-align: center;
+    padding: 2rem;
+    font-style: italic;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+
+.contact-section {
+    padding: 120px 5% 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+                url('contact-bg.jpg') center/cover no-repeat fixed;
+}
+
+.contact-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1.contact-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 5rem;
+    margin-bottom: 4rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.social-container {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+.contact-quote {
+    text-align: center;
+    max-width: 900px;
+    margin: 4rem auto 0;
+    padding: 2rem;
+    font-style: italic;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+
+/* Portfolio Styles */
+.portfolio {
+    padding-top: 80px;
+    background-color: #000;
+    min-height: 100vh;
+}
+
+section {
+    padding: 20rem 10%;
+    position: relative;
+}
+
+.title-box {
+    display: inline-block;
+    border: 2px solid #ffc107;
+    padding: 0.5rem 2rem;
+    margin-bottom: 4rem;
+}
+
+/* Highlights Section */
+.highlights {
+    margin-top: -10rem;
+}
+
+.highlights .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.highlights .description {
+    text-align: center;
+    color: #cccccc;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+
+/* Rank Stats Section */
+.rank-stats {
+    margin-top: -10rem;
+}
+
+.stats-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8rem;
+    margin-bottom: 6rem;
+}
+
+.rank-icon {
+    text-align: right;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+/* Hero Favorit Section */
+.hero-fav {
+    margin-top: -10rem;
+}
+
+.hero-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+    margin: 10rem auto;
+    max-width: 90%;
+    padding: 0 3rem;
+}
+
+.hero-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 3rem;
+    border-radius: 15px;
+}
+
+.hero-card h3 {
+    font-family: 'Anton', sans-serif;
+    color: #ffc107;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* Documentation Section */
+.documentation {
+    margin-top: -10rem;
+}
+
+.documentation .title-box {
+    position: absolute;
+    right: 10%;
+    top: 25rem;
+}
+
+.gallery {
+    margin-top: 30rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Divider */
+.divider {
+    height: 1px;
+    background: #ffc107;
+    margin: 0;
+    opacity: 0.5;
+}
+
