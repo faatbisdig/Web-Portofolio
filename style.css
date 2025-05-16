@@ -51,9 +51,27 @@ nav {
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 5%;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('gaming-bg.jpg') center/cover;
+                url('images/ltr\ home.png') center/cover;
+}
+
+.hero-content {
+    max-width: 50%;
+    margin-left: 5%;
+}
+
+.hero-image {
+    max-width: 40%;
+    margin-right: 5%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.3);
 }
 
 .hero-content {
