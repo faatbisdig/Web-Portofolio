@@ -1,15 +1,42 @@
+/* Base Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: #1a1a1a;
+    font-family: 'Poppins', sans-serif;
     color: white;
+    overflow-x: hidden;
+    height: 100vh;
+    position: relative;
 }
 
+/* Background Image Setup */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/ltrhome.png') no-repeat center center;
+    background-size: cover;
+    z-index: -2;
+}
+
+/* Dark Overlay for Background */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75); /* Darker overlay to match the image */
+    z-index: -1;
+}
 header {
     padding: 1rem 5%;
     position: fixed;
@@ -47,84 +74,107 @@ nav {
     color: #ffc107;
 }
 
+/* Hero Section */
 .hero {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 5%;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('images/ltr\ home.png') center/cover;
+    justify-content: center; /* Center content horizontally */
+    position: relative;
 }
 
 .hero-content {
-    max-width: 50%;
-    margin-left: 5%;
-}
-
-.hero-image {
-    max-width: 40%;
-    margin-right: 5%;
-}
-
-.hero-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255, 193, 7, 0.3);
-}
-
-.hero-content {
+    text-align: center; /* Center text */
+    z-index: 3;
     max-width: 800px;
-    margin-left: 10%;
+    /* No background color - removed the black box */
 }
 
 .hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    text-align: center;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif; /* More similar to the image */
 }
 
 .hero-content p {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 400;
 }
 
 .cta-button {
+    display: inline-block;
     background-color: #ffc107;
     color: black;
-    padding: 0.8rem 2rem;
-    border: none;
+    padding: 12px 40px;
     border-radius: 25px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
+.cta-button:hover {
+    background-color: #e0aa00;
+}
+
+/* Know More Navigation */
 .know-more {
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    text-align: right;
-    display: flex;
-    align-items: center;
+    bottom: 40px;
+    right: 40px;
+    z-index: 10;
 }
 
 .know-more a {
     color: white;
     text-decoration: none;
-    font-weight: normal;
-    font-size: 1.5rem;
-    position: relative;
+    font-weight: 700;
+    font-size: 20px;
     font-family: 'Anton', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
 }
 
+.know-more .arrow {
+    color: #ffc107;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.know-more a::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ffc107;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .know-more {
+        bottom: 1rem;
+        right: 1rem;
+    }
+    
+    .know-more a {
+        font-size: 1.2rem;
+    }
+}
 
 .know-more a::after {
     content: '';
@@ -140,13 +190,6 @@ nav {
     text-decoration: none;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
     background-color: #1a1a1a;
     color: white;
@@ -189,10 +232,11 @@ nav {
     color: #ffc107;
 }
 
+
 .about-section {
     min-height: 100vh;
     padding: 80px 5%;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    background: linear-gradient(rgba(114, 114, 114, 0.8), rgba(0, 0, 0, 0.8)),
                 url('bg-about.jpg') center/cover;
     position: relative;
     display: flex;
@@ -592,7 +636,7 @@ nav {
 .blog-content {
     padding-top: 80px;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    background: linear-gradient(rgba(114, 114, 114, 0.8), rgba(0, 0, 0, 0.8)),
                 url('blog-bg.jpg') center/cover;
 }
 
