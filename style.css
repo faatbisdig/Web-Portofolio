@@ -1,3 +1,4 @@
+
 /* Base Reset */
 * {
     margin: 0;
@@ -236,7 +237,7 @@ nav {
 .about-section {
     min-height: 100vh;
     padding: 80px 5%;
-    background: linear-gradient(rgba(114, 114, 114, 0.8), rgba(0, 0, 0, 0.8)),
+    background: linear-gradient(rgba(21, 21, 21, 0.8), rgba(0, 0, 0, 0.8)),
                 url('bg-about.jpg') center/cover;
     position: relative;
     display: flex;
@@ -636,7 +637,7 @@ nav {
 .blog-content {
     padding-top: 80px;
     min-height: 100vh;
-    background: linear-gradient(rgba(114, 114, 114, 0.8), rgba(0, 0, 0, 0.8)),
+    background: linear-gradient(rgba(35, 35, 35, 0.8), rgba(0, 0, 0, 0.8)),
                 url('blog-bg.jpg') center/cover;
 }
 
@@ -761,7 +762,8 @@ nav {
     color: #ffc107;
 }
 
-.contact-section {
+.contact-section 
+ {
     padding: 120px 10% 40px;
     display: flex;
     flex-direction: column;
@@ -827,8 +829,8 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-                url('contact-bg.jpg') center/cover no-repeat fixed;
+ 
+    
 }
 
 .contact-content {
@@ -908,13 +910,29 @@ body {
 /* Portfolio Styles */
 .portfolio {
     padding-top: 80px;
-    background-color: #000;
+    background: url('images/ltrhome.png') no-repeat center center fixed;
+    background-size: cover; /* Pastikan background menutupi seluruh area */
     min-height: 100vh;
+    position: relative;
+}
+
+/* Dark Overlay for Background */
+.portfolio::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75); /* Darker overlay to match the image */
+    z-index: 1;
+    pointer-events: none;
 }
 
 section {
-    padding: 20rem 10%;
+    padding: 10rem 10%; /* Kurangi padding untuk lebih rapat */
     position: relative;
+    z-index: 2;
 }
 
 .title-box {
@@ -926,7 +944,7 @@ section {
 
 /* Highlights Section */
 .highlights {
-    margin-top: -10rem;
+    margin-top: 5rem;
 }
 
 .highlights .content {
@@ -941,70 +959,67 @@ section {
     color: #cccccc;
     font-size: 1.1rem;
     max-width: 800px;
-    margin: 0 auto;
-    margin-top: 10rem;
-    margin-bottom: 2rem;
+    margin: 5rem auto 2rem;
 }
 
 /* Rank Stats Section */
 .rank-stats {
-    margin-top: -10rem;
+    margin-top: 5rem;
 }
 
 .stats-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 8rem;
-    margin-bottom: 6rem;
+    gap: 4rem;
 }
 
 .rank-icon {
     text-align: right;
-    margin-top: 4rem;
-    margin-bottom: 6rem;
+    margin-top: 2rem;
 }
 
 /* Hero Favorit Section */
 .hero-fav {
-    margin-top: -10rem;
+    margin-top: 5rem;
 }
 
 .hero-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 6rem;
-    margin: 10rem auto;
+    gap: 3rem;
+    margin: 5rem auto;
     max-width: 90%;
-    padding: 0 3rem;
 }
 
 .hero-card {
     background: rgba(255, 255, 255, 0.05);
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 15px;
 }
 
 .hero-card h3 {
     font-family: 'Anton', sans-serif;
     color: #ffc107;
-    font-size: 3rem;
-    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Documentation Section */
 .documentation {
-    margin-top: -10rem;
+    margin-top: 5rem;
 }
 
 .documentation .title-box {
-    position: absolute;
-    right: 10%;
-    top: 25rem;
+    position: relative;
+    right: 0;
+    top: 0;
+    text-align: center;
 }
 
+/* Gallery Section */
 .gallery {
-    margin-top: 30rem;
+    margin-top: 5rem;
 }
 
 .gallery-grid {
@@ -1014,6 +1029,8 @@ section {
     margin-bottom: 3rem;
 }
 
+
+
 /* Divider */
 .divider {
     height: 1px;
@@ -1021,4 +1038,3 @@ section {
     margin: 0;
     opacity: 0.5;
 }
-
